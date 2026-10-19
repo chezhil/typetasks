@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taskwise</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Taskwise</h1>
+      <p class="tagline">A few things, tracked well.</p>
+    </header>
+
+    <div class="addrow">
+      <label for="title" class="visually-hidden">New task title</label>
+      <input id="title" placeholder="What needs doing?" autocomplete="off" />
+      <button id="add" type="button">+ Add</button>
+    </div>
+
+    <div id="chips" class="chips" aria-label="Filter by status"></div>
+
+    <ul id="list" class="list"></ul>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
